@@ -1,6 +1,6 @@
 ## PDF Glossary Export Add-on for Anki
 
-This is an add-on for the spaced-repetition flashcard app [Anki](https://apps.ankiweb.net/) that allows you export your decks as compact HTML and PDF glossaries.
+This is an add-on for the spaced-repetition flashcard app [Anki](https://apps.ankiweb.net/) that allows you to export your decks as compact glossaries.
 
 ### Table of Contents
 
