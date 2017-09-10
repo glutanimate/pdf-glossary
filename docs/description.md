@@ -2,7 +2,12 @@ Export your decks as compact HTML/PDF glossaries that are ideal for printing ref
 
 **SCREENSHOT**
 
+*Two-column format*
+
 ![](https://raw.githubusercontent.com/glutanimate/pdf-glossary/master/screenshots/twocol.png)
+
+*One-column format*
+
 ![](https://raw.githubusercontent.com/glutanimate/pdf-glossary/master/screenshots/onecol.png)
 
 **COMPATIBILITY**
@@ -17,9 +22,9 @@ The add-on integrates itself with Anki's regular Export menu, which can be invok
 
     You should use this when exporting large collections, or cards with complex formatting as Chrome will be able to parse them much better than the PDF Exporter. In order to convert these HTML exports to PDF documents you can use Chrome's "Print to PDF" option.
 
-- One-column PDF Glossary (page size either A4 or Letter) – Will directly generate a PDF glossary in a one-column page layout (Screenshot 2 above)
+- One-column PDF Glossary (page size either A4 or Letter) – Will directly generate a PDF glossary in a one-column page layout
 
-- Two-column PDF Glossary (page size either A4 or Letter) – Will directly generate a PDF glossary in a one-column page layout (Screenshot 1 above)
+- Two-column PDF Glossary (page size either A4 or Letter) – Will directly generate a PDF glossary in a one-column page layout
 
 The add-on also has limited abilites to export some of your scheduling information. If you check the corresponding checkbox, all cards that surpass or fall below a certain ease percentage will be highlighted in green or red, respectively.
 
@@ -82,7 +87,9 @@ Please **do not report issues or bugs in the review section below**, as I will n
 
 This add-on was made possible with the kind support of Evan (runninreb23). All credit for the initial idea goes to him.
 
-Licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl.html). The code for this add-on is available on [![GitHub icon](https://glutanimate.com/logos/github.svg) GitHub](https://github.com/Glutanimate/pdf-glossary).
+The deck samples in the screenshots are based on the [Brosencephalon deck](https://www.brosencephalon.com/) and used with the kind permission of Amreet Siddhu.
+
+Licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl.html). The code for this add-on is available on [![GitHub icon](https://glutanimate.com/logos/github.svg) GitHub](https://github.com/Glutanimate/pdf-glossary). For more information on the licensing terms and other software shipped with this package please check out the [README](https://github.com/Glutanimate/pdf-glossary#credits).
 
 **MORE RESOURCES**
 
