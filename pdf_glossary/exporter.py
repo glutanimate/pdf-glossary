@@ -272,7 +272,6 @@ class PDFGlossaryExporter(GlossaryExporter):
         openFile(path.encode("utf-8"))
 
 
-
 class TwoColA4PDFGlossaryExporter(PDFGlossaryExporter):
     """
     PDF Glossary exporter: Two-column layout, A4 page
@@ -301,15 +300,10 @@ class TwoColLetterPDFGlossaryExporter(PDFGlossaryExporter):
         PDFGlossaryExporter.__init__(self, col)
 
 
-class OneColA4PDFGlossaryExporter(PDFGlossaryExporter):
+class OneColPDFGlossaryExporter(PDFGlossaryExporter):
     """
-    PDF Glossary exporter: Two-column layout, A4 page
+    One-column PDF Glossary superclass, never instantiated directly
     """
-
-    key = "One-column PDF Glossary [A4]"
-    header = xpdf_static
-    card_element = card_element_table
-    style = xpdf_page_onecol_a4 + xpdf_style_table + xpdf_style_table_onecol
 
     def __init__(self, col):
         PDFGlossaryExporter.__init__(self, col)
@@ -335,7 +329,21 @@ class OneColA4PDFGlossaryExporter(PDFGlossaryExporter):
         return css
 
 
-class OneColLetterPDFGlossaryExporter(PDFGlossaryExporter):
+class OneColA4PDFGlossaryExporter(OneColPDFGlossaryExporter):
+    """
+    PDF Glossary exporter: Two-column layout, A4 page
+    """
+
+    key = "One-column PDF Glossary [A4]"
+    header = xpdf_static
+    card_element = card_element_table
+    style = xpdf_page_onecol_a4 + xpdf_style_table + xpdf_style_table_onecol
+
+    def __init__(self, col):
+        OneColPDFGlossaryExporter.__init__(self, col)
+
+
+class OneColLetterPDFGlossaryExporter(OneColPDFGlossaryExporter):
     """
     PDF Glossary exporter: Two-column layout, A4 page
     """
@@ -346,13 +354,14 @@ class OneColLetterPDFGlossaryExporter(PDFGlossaryExporter):
     style = xpdf_page_onecol_letter + xpdf_style_table + xpdf_style_table_onecol
 
     def __init__(self, col):
-        PDFGlossaryExporter.__init__(self, col)
+        OneColPDFGlossaryExporter.__init__(self, col)
 
 
 exporters = (HTMLGlossaryExporter,
     OneColA4PDFGlossaryExporter, OneColLetterPDFGlossaryExporter,
     TwoColA4PDFGlossaryExporter, TwoColLetterPDFGlossaryExporter,
 )
+
 
 # Hooks
 
