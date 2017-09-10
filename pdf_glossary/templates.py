@@ -156,6 +156,9 @@ td.question {
     width: 50%;
     font-weight: normal;
 }
+td.answer {
+    width: 100%;
+}
 td.spacer {
     width: 7%;
 }

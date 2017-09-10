@@ -314,6 +314,26 @@ class OneColA4PDFGlossaryExporter(PDFGlossaryExporter):
     def __init__(self, col):
         PDFGlossaryExporter.__init__(self, col)
 
+    def getCountCSS(self, cnt, card):
+        css = GlossaryExporter.getCountCSS(self, cnt, card)
+
+        # set column width manually since xhtml2pdf doesn't support
+        # dynamic widths
+        if cnt >= 10000:
+            pct = "10"
+        elif cnt >= 1000:
+            pct = "8"
+        elif cnt >= 100:
+            pct = "6"
+        elif cnt >= 10:
+            pct = "4"
+        elif cnt < 10:
+            pct = "4"
+
+        css += "width: {}%;".format(pct)
+
+        return css
+
 
 class OneColLetterPDFGlossaryExporter(PDFGlossaryExporter):
     """
