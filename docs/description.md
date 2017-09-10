@@ -1,4 +1,4 @@
-Export your decks as compact HTML/PDF glossaries that are ideal for printing reference sheets!
+Export your decks as compact HTML/PDF glossaries that are ideal for printing reference sheets of your cards!
 
 **SCREENSHOT**
 
@@ -18,13 +18,13 @@ This add-on only works with Anki's stable release branch (2.0.x ≥ 2.0.30). The
 
 The add-on integrates itself with Anki's regular Export menu, which can be invoked either through *File* → *Export*, or by clicking on the gear next to a deck and selecting *Export*. With the add-on installed, you will be able to choose from 5 additional export options:
 
-- Export Two-column HTML glossary – This will generate an HTML file that is designed to be printed in Chrome. The page layout might not work properly on other browsers.
+- **Two-column HTML glossary** – This will generate an HTML file that is designed to be printed in Chrome. The page layout might not work properly on other browsers.
 
     You should use this when exporting large collections, or cards with complex formatting as Chrome will be able to parse them much better than the PDF Exporter. In order to convert these HTML exports to PDF documents you can use Chrome's "Print to PDF" option.
 
-- One-column PDF Glossary (page size either A4 or Letter) – Will directly generate a PDF glossary in a one-column page layout
+- **One-column PDF Glossary** (page size either *A4* or *Letter*) – Will directly generate a PDF glossary in a one-column page layout
 
-- Two-column PDF Glossary (page size either A4 or Letter) – Will directly generate a PDF glossary in a one-column page layout
+- **Two-column PDF Glossary** (page size either *A4* or *Letter*) – Will directly generate a PDF glossary in a two-column page layout
 
 The add-on also has limited abilites to export some of your scheduling information. If you check the corresponding checkbox, all cards that surpass or fall below a certain ease percentage will be highlighted in green or red, respectively.
 
