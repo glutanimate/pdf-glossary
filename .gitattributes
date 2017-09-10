@@ -8,6 +8,9 @@ pdf_glossary/libs/**/*.so export-ignore
 pdf_glossary/libs/**/*.pyd export-ignore
 pdf_glossary/libs/**/*.dylib export-ignore
 pdf_glossary/libs/**/.libs export-ignore
+# No need for compilation:
+Makefile export-ignore
+README.md export-ignore
 # Adjust GitHub linguist settings:
 ANKIWEB.md linguist-documentation
 README.md linguist-documentation

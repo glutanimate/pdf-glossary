@@ -33,7 +33,7 @@ This is an add-on for the spaced-repetition flashcard app [Anki](https://apps.an
 
 1. Go to *Tools* -> *Add-ons* -> *Open add-ons folder*
 2. Find and delete `PDF Glossary.py` and `pdf_glossary` if they already exist
-3. Download and extract the latest add-on release from the [releases tab](https://github.com/Glutanimate/pdf-glossary/releases)
+3. Download and extract the latest add-on release from the [releases tab](https://github.com/Glutanimate/pdf-glossary/releases) (you can use the source code archives)
 4. Move `PDF Glossary.py` and `pdf_glossary` into the add-ons folder
 5. Restart Anki
 
