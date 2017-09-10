@@ -1,16 +1,22 @@
-## PDF Glossary Add-on for Anki
+## PDF Glossary Export Add-on for Anki
 
-This is an add-on for the spaced-repetition flashcard app [Anki](https://apps.ankiweb.net/)
+This is an add-on for the spaced-repetition flashcard app [Anki](https://apps.ankiweb.net/) that allows you export your decks as compact HTML and PDF glossaries.
 
 ### Table of Contents
 
 <!-- MarkdownTOC -->
 
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Documentation](#documentation)
+- [License and Credits](#license-and-credits)
+
 <!-- /MarkdownTOC -->
 
 ### Screenshots
 
-![](screenshots/screenshot.png)
+![](screenshots/twocol.png)
+![](screenshots/onecol.png)
 
 ### Installation
 
@@ -33,5 +39,7 @@ For further information on the use of this add-on please check out [the original
 ### License and Credits
 
 *PDF Glossary* is *Copyright © 2017 [Aristotelis P.](https://glutanimate.com/)*
+
+This add-on was made possible with the kind support of Evan (runninreb23). All credit for the initial idea goes to him.
 
 Licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl.html).
