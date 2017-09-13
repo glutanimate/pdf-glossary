@@ -102,9 +102,12 @@ class GlossaryExporter(Exporter):
             with open(user_css_file, "r") as f:
                 self.user_style = f.read()
         except (IOError, OSError):
-            with open(user_css_file, "w") as f:
-                # write default style
-                f.write(self.user_style)
+            try:
+                with open(user_css_file, "w+") as f:
+                    # write default style
+                    f.write(self.user_style)
+            except (IOError, OSError):
+                pass
 
         if isWin:
             # xhtml2pdf needs the media collection base path for images

@@ -1,6 +1,6 @@
 Export your decks as compact HTML/PDF glossaries that are ideal for printing reference sheets of your cards!
 
-**SCREENSHOT**
+**SCREENSHOTS**
 
 *Two-column format*
 
