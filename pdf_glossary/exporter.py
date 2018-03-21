@@ -37,7 +37,7 @@ from aqt.utils import tooltip, getBase
 
 from anki.exporting import Exporter
 from anki.hooks import addHook
-from anki.utils import isWin, isMac
+from anki.utils import isWin, isMac, ids2str
 
 # workaround for xhtml2pdf logging error
 import logging
@@ -144,6 +144,29 @@ class GlossaryExporter(Exporter):
                     x.extract()
             text = unicode(soup)
         return text
+    
+    def cardIds(self):
+        """Returns list of card IDs for current exporting settings
+        Overrides default cardIds() method. Changes: Sort cids by note creation date
+        and card number"""
+        if not self.did:
+            # order cards by nid (=note creation date) and ord (=card number)
+            # Need to explicitly specify an order –
+            # leave it out and SQL result order becomes unpredictable
+            cids = self.col.db.list("SELECT id FROM cards ORDER BY nid, ord")
+        else:
+            cids = self._cardIdsByDeck(self.did, children=True)
+        self.count = len(cids)
+        return cids
+    
+    def _cardIdsByDeck(self, did, children=False):
+        # adapted from anki.decks.cids
+        if not children:
+            return self.col.db.list("SELECT id FROM cards WHERE did={} ORDER BY nid, ord".format(did))
+        dids = [did]
+        for name, id in self.col.decks.children(did):
+            dids.append(id)
+        return self.col.db.list("SELECT id FROM cards WHERE did IN {} ORDER BY nid, ord".format(ids2str(dids)))
 
 
     def getCountCSS(self, cnt, card):

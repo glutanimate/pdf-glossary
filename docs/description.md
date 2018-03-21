@@ -85,7 +85,7 @@ Please **do not report issues or bugs in the review section below**, as I will n
 
 *Copyright (c) 2017 [Glutanimate](https://github.com/Glutanimate)*
 
-This add-on was made possible with the kind support of Evan (runninreb23). All credit for the initial idea goes to him.
+Thanks a lot to Evan (runninreb23) for commissioning this add-on! All credit for the original idea goes to him. This add-on would not have been possible without his support.
 
 The deck samples in the screenshots are based on the [Brosencephalon deck](https://www.brosencephalon.com/) and used with the kind permission of Amreet Siddhu.
 
